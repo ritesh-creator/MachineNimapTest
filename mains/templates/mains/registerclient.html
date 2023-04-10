@@ -1,0 +1,23 @@
+{%extends "mains/base.html"%}
+
+{%block content%}
+
+<div class="container">
+    <h2> Client Registration Form ..!</h2>
+</div>
+<div class="container">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Register a client </legend>
+            {{form.as_p}}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Register</button>
+        </div>
+    </form>
+</div>
+
+
+
+{%endblock content%}
